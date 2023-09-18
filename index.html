@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Caveat:wght@500&family=Covered+By+Your+Grace&family=Dancing+Script:wght@400;500&family=Homemade+Apple&family=Kalam&family=League+Spartan:wght@400;500;600;700;800&family=Montserrat:wght@300&family=Pacifico&family=Permanent+Marker&family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>BUG BOUNTY</title>
+</head>
+<body>
+    <div id="wrapper">
+        
+            <!-- heading-title -->
+            <div class="nav">
+                <div class="heading-title">
+                    <h1>Bug-Bounty</h1>
+                    <img src="assets/logohackathonimg-removebg-preview.png" alt="">
+                </div>
+                <div class="dropdown .icons-ham-links">
+                    <button onclick="myFunction()" class="dropbtn"><i class="dropbtn fa-solid fa-bars"></i></button>
+                    <ul class="icons dropdown-content" id="myDropdown">
+                    <li><a href=""><i class="icn fa-brands fa-linkedin" ></i></a></li>
+                    <li><a href=""><i class="icn fa-brands fa-square-instagram" ></i></a></li>
+                    <li><a href=""><i class="icn fa-brands fa-facebook" ></i></a></li>
+                    <li><a href=""><i class="icn fa-solid fa-envelope"></i></a></li>
+                    
+                    </ul>
+                </div>
+                <script>
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>               
+            </div>
+
+            <div id="hero-section">
+            <!-- text-content -->
+            <h2>Hack With Us</h2>
+            <div class="content-hero">              
+                <div class="text-content">                   
+                    <p class="quote">“Programmer: a machine that turns coffee into code.”</p>
+                    <p class="text">Are you ready to embark on an exciting journey of innovation and problem-solving? We invite you to join our upcoming hackathon, where creativity knows no bounds and collaboration is key.</p>
+
+                </div>
+                <div class="image-content">
+                    <img src="assets/Screenshot 2023-09-12 192813.png" alt="" class="hackathon_img">
+                </div>
+
+            </div>
+            <div class="btn-group">
+                <h3 class="date">Last Date To Apply : 25/10/23</h3>
+                <div class="btn-container">
+                    <button class="btn">Register</button>
+                    <button class="btn">Know More</button>
+                </div>                               
+            </div>
+            </div>
+                   
+        <div id="cards">
+            <div class="card-info">
+                <div class="img-card">
+                    <img src="assets/preevent.png" alt="">
+                </div>
+                <h3>Pre-Event Prep</h3>
+                <p class="card-text">Familiarise yourself with the challenges, and come up with an innovative solution or apply with your existing project. Register yourself, submit your project, add your team and continue developing your project prior to the event. Keep updating your submission content and team.</p>                
+            </div>
+            <div class="card-info">
+                <div class="img-card">
+                    <img src="assets/thehack.png" alt="">
+                </div>
+                <h3>The Hack</h3>
+                <p class="card-text">An Onsite or Online intensive project development period supported by knowledgeable and skilled mentors to finalise the demo of your solution. It’s also a great opportunity to network and learn new skills. Pitch to the jury to win!!!</p>                
+            </div>
+            <div class="card-info">
+                <div class="img-card">
+                    <img src="assets/innovate.png" alt="">
+                </div>
+                <h3>Innovate ,Incubate</h3>
+                <p class="card-text">Even if you aren’t chosen as a winner, we encourage you to continue with your project. Many partners or other entities may be interested in future possibilities with teams so be active, keep the communication active with challenge partners</p>                
+            </div>
+
+        </div>
+
+        <div id="prize-video">
+            <div class="video_hackathon">
+                <h2>Unleash your creativity and problem-solving skills – Join our hackathon and be part of innovation in action!</h2>
+                <h2>Get ready to code, connect, and create at our hackathon. Your skills could be the key to success!</h2>
+                <h2>Hack with us and turn your ideas into reality. Let's code, collaborate, and conquer challenges together!</h2>
+            </div>
+            <div class="prizes">
+                <div class="prize-card">
+                    <img src="assets/mac2img-removebg-preview.png" alt="">
+                    <h3>Macbook pro</h3>
+                    <p>Winning team will get Macbook-pro</p>
+                </div>
+                <div class="prize-card">
+                    <img src="assets/ipad-img-removebg-preview.png" alt="">
+                    <h3>Apple iPad 9th gen</h3>
+                    <p>2nd and 3rd Runner ups will get Apple iPad</p>
+                </div>
+                <div class="prize-card">
+                    <img src="assets/hoodiesimg-removebg-preview.png" alt="">
+                    <h3>consolation prize</h3>
+                    <p>50 runner ups will get Hoodies</p>
+                </div>
+                <div class="prize-card">
+                    <img src="assets/diariesimg-removebg-preview.png" alt="">
+                    <h3>Notebooks</h3>
+                    <p>For All the Participants of HackAthon</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>@copyright Bug Bounty</p>
+            <p>Contact:89934567897</p>
+            <p><i class="icn fa-solid fa-envelope"></i>Mail us: abcydef@gmail.com</p>         
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bd05d911bb.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

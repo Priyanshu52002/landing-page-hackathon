@@ -1,0 +1,438 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-x: none;
+    background-color:#ffffff
+}
+#hero-section{
+    width: 90%;  
+    box-shadow: 0.5rem 0.5rem 1rem #282a86fd;
+    margin: 0 auto;
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding:2% 10%;
+    height: 15%;
+    background: rgb(117,123,166);
+    background: linear-gradient(90deg, rgba(117,123,166,0.9529936974789917) 2%, rgba(17,52,136,1) 100%);
+    position:relative;
+}
+.heading-title {
+    font-size: 1rem;
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    display: flex;
+    width:30%;
+    justify-content: center;
+    align-items: center;
+}
+.heading-title h1{
+    width:70%;
+    height: 100%;
+}
+.heading-title img{
+    width:30%;
+    height: 70%;
+    margin-left: -4rem;
+    filter: drop-shadow(0.5rem 0.5rem 1rem white
+    );
+
+}
+.icons-ham-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.icons li{
+    list-style: none;
+}
+
+.icn{
+    font-size:2rem;
+    margin-right: 1rem;
+    color: #ffffff;
+    transition: all 0.4s;
+    z-index: 100;
+   
+}
+
+.icn:hover{
+    transform: scale(1.1);
+}
+
+.content-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1%;
+    margin:0 5%;
+    margin-top: -2rem;
+    justify-content: space-around;
+}
+
+.text-content{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    padding: 2rem;
+}
+#hero-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    filter: drop-shadow(0.5rem 0.5rem 1.2rem rgb(38, 47, 118));
+    font-family: 'Kalam', cursive;
+}
+.text{
+    font-size: 1.1rem;
+    opacity:0.7;
+    font-weight: 500;
+}
+.quote{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4rem;
+    color: #282a86fd;
+    opacity:0.7;
+}
+.image-content{
+    width: 50%;
+    justify-content: flex-end;
+}
+.hackathon_img{
+    width:100%;
+}
+.btn-group{
+    text-align: center;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -4rem;
+    padding-bottom: 2rem;
+}
+.btn-container{
+    width: 50%;
+}
+
+.btn{
+    height:2.1rem;
+    width:7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color:#324d7d;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0px #4b4c65;
+    color: white;
+    z-index:1;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-top: 1rem; 
+}
+.btn::before{
+    content:"";
+    background-color: #0105207b;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform:scaleX(0);
+    transition: all 0.8s;
+    transform-origin: left;
+    z-index: -1;
+}
+.btn:hover::before{
+    transform:scaleX(1);
+}
+.date{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-family: 'Kalam', cursive;
+    color: #050506fd;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgb(154, 154, 210);
+    opacity:0.9;
+}
+
+#cards{
+    width: 100%;
+    height:auto;
+    padding:5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+.card-info{
+    width: 25%;
+    border: 1px solid #282a86fd;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgb(154, 154, 210);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    padding:0.5%;
+    background-color: #e9e9e9;
+    transition: all 0.4s;
+}
+.card-info:hover{
+    transform: scale(1.04);
+}
+.img-card{
+    width: 100%;
+    height:35%;
+}
+.img-card img{
+    width: 100%;
+}
+.card-info h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 1.5rem ;
+    color: #282a86fd;
+}
+.card-text{
+    font-size: 1.1rem;
+    opacity:0.7;
+    font-weight: 500;
+}
+#footer{
+    width: 100%;
+    height:18%;
+    background: rgb(117,123,166);
+background: linear-gradient(90deg, rgba(117,123,166,0.9529936974789917) 2%, rgba(17,52,136,1) 100%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    font-size: 1.5rem;
+}
+#prize-video{
+    width:90%;
+    height:90%;
+    margin: 0 auto;
+    box-shadow: -0.5rem -0.5rem 1rem #282a86fd;
+}
+.video_hackathon{
+    width: 100%;
+    height:15rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.video_hackathon h2{
+    width: 19%;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 1.1rem;
+    color: #000;
+    opacity:0.7;
+    /* border: 2px solid black; */
+    align-self: baseline;
+    height:100%;
+    border-radius: 0 0 7rem 7rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgb(154, 154, 210);
+    background-color: #f1cab1fd;
+    color: #000;
+    padding:2rem;
+}
+.hacking-video{
+    width: 50%;
+    height: 100%;
+    size: cover;
+}
+.prizes{
+    width:96%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    margin-top:2.5rem;
+    margin-bottom: 2.5rem;
+}
+.prize-card{
+    width:20%;
+    height:15rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius: 1rem;
+    justify-content: space-around;
+    background-color: #f3f3fafd;
+    box-shadow: 1rem 1rem 1.5rem rgb(154, 154, 210);
+    transition: all 0.4s;
+}
+.prize-card:hover{
+    transform: scale(1.04);
+}
+.prize-card img{
+    width: 96%;
+    height:50%;
+    border-bottom: 2px solid black;
+
+}
+.prize-card p{
+    width:80%;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+    
+}
+.prize-card h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.5rem ;
+    color: #000;
+    opacity:0.7;
+}
+.dropbtn{
+    opacity:0;
+}
+@media(max-width:850px){
+    .dropbtn {
+        background-color: #1d1e1e;
+        color: white;
+        padding: 6px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        opacity: 1;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #1d2136;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        background-color: #180f0f;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #091f3a;
+        min-width: 100px;
+        overflow:none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content li a{
+        text-decoration: none;
+      }
+      .dropdown-content li a i {
+        color: rgb(248, 247, 247);
+        padding: 12px 5px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      
+      .show {
+        display: block;
+    }
+    .heading-title{
+        width:60%;
+        justify-content: space-between;
+    }
+    .heading-title h1{
+        font-size: 2rem;
+        width:30%;
+    }
+    .heading-title img{
+        margin-left: 0;
+        width:30%;
+    }
+
+}
+@media(max-width:680px){
+    .heading-title{
+        width:70%;
+        justify-content: space-between;
+    }
+    .heading-title h1{
+        font-size: 2rem;
+        width:30%;
+    }
+    .heading-title img{
+        margin-left: 0;
+        width:50%;
+    }
+    .content-hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap:1rem;
+        margin-top:0.5rem;
+    }
+    .text-content{
+        width: 100%;
+        height:50%;
+        padding: 0.5rem;
+        margin-top:-2rem;
+    }
+    .image-content{
+        width: 100%;
+        height:50%;
+
+    }
+    .btn-group{
+       margin-top: -1rem;
+    }
+    .date{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #cards{
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        gap:1rem;
+        overflow-y: hidden;
+    }
+
+    .card-info{
+        width:95%;
+
+    }
+    #prize-video{
+        height: auto;
+        overflow-y: hidden;
+    }
+    .video_hackathon{
+        height:12rem;
+        display:none;
+    }
+    .video_hackathon h2{
+       visibility: hidden;
+    }
+
+    .prizes{
+        flex-direction: column;
+        gap:1rem;
+        margin:2rem auto;
+        align-items: center;
+    }
+    .prize-card{
+       height:15rem;
+       width:80%;
+
+    }
+
+}
+
